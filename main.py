@@ -9,3 +9,6 @@ import os
 # convert image to numpy array
 def pil_to_np(img): 
     return np.array(img)
+
+def np_to_pil(arr):
+    return Image.fromarray(np.uint8(arr))
